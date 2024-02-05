@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer Names</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script>
+        // Embed the page value into the script.js file
+    </script>
+</head>
+<body>
+
+{% for name in items_on_page %}
+    <div class="row-container">
+        <div class="name-container">
+            <a target="_blank" href="https://www.google.com/search?q={{ name }}+twitch&tbm=isch&sclient=img">{{ name }}</a>
+        </div>
+        <div class="images-container">
+            {% for img_src in streamers_img[name][0] %}
+                <img src="{{ img_src }}">
+            {% endfor %}
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" name="streamer" value="{{ name }}">
+        </div>
+    </div>
+{% endfor %}
+
+<div class="pagination-buttons">
+{% if page > 1%}
+    <form action="{{ url_for('index') }}" method="get">
+        <input type="hidden" name="page" value="{{ page - 1 }}">
+        <button type="submit">Previous</button>
+    </form>
+{% endif%}
+<span id="pagination"> Page {{page}} of {{total_pages}}</span>
+{% if page < total_pages %}
+    <form action="{{ url_for('index') }}" method="get">
+        <input type="hidden" name="page" value="{{ page + 1 }}">
+        <button type="submit">Next</button>
+    </form>
+{% endif%}
+</div>
+<div class="save-names">
+    <button id="saveButton">Save Checked Names</button>
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

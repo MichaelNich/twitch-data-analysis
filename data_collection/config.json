@@ -1,0 +1,15 @@
+{
+  "chrome_driver_path": "utils/chrome_driver/chromedriver.exe",
+  "user_data_dir": "C:/Users/YOURGOOGLEPATH/AppData/Local/Google/Chrome/User Data",
+  "headless": true,
+  "backup_folder": "fails_storage",
+  "log_level": "--log-level=1",
+  "dsn_hostname": "1bbf73c5-d84a-4bb0-85b9-ab1a4348f4a4.c3n41cmd0nqnrk39u98g.databases.appdomain.cloud",
+  "dsn_uid": "djb36979",
+  "dsn_pwd": "YuQnD21jnwtQd69L",
+  "dsn_driver": "{IBM DB2 ODBC DRIVER}",
+  "dsn_database": "BLUDB",
+  "dsn_port": "32286",
+  "dsn_protocol": "TCPIP",
+  "dsn_security": "SSL"
+}

@@ -1,0 +1,88 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid white;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.row-container:has(input:checked) {
+    background-color: darkolivegreen;
+}
+
+.name-container {
+    flex: 1;
+}
+
+.images-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between images */
+    padding-right: 300px;
+}
+
+.images-container img {
+    width: 200px;
+    height: 110px;
+    object-fit: cover;
+}
+.checkbox-container{
+    display: flex;
+    padding-left: 100px;
+}
+
+input {
+    transform: scale(1.5);
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagination-buttons form {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Adjust the margin between the buttons and the span */
+}
+
+.pagination-buttons button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px; /* Adjust the width as needed */
+}
+
+.save-names {
+    text-align: right; /* Align the button to the right */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.save-names button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border: none;
+    
+}
+
+#saveButton:disabled {
+    opacity: 0.5; /* Adjust the opacity level as needed */
+    cursor: not-allowed; /* Change cursor style to indicate it's not clickable */
+    background-color: transparent; /* Set background color to transparent */
+    color: #aa5b5b; /* Change text color to orange when disabled */
+    /*color: #aa5b5b;*/
+    }
