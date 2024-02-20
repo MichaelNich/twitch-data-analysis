@@ -1,6 +1,9 @@
 # <h1>twitch-data-analysis</h1>
 ## **A Week in the Life of Twitch: Analyzing Streamer, Game, and Viewer Dynamics**
 
+[LIVE PROJECT LINK](https://michaelnich.github.io/portfolio/projects/project1/project1.html#Outline)
+
+
 ### *This data analysis project explores Twitch streaming trends, focusing on streamers, games, and viewer behavior. The dataset was collected from Twitch.tv during a one-week period, capturing streamers broadcasting in various languages. The methodology involves web scraping, data transformation, data visualization and storage in an IBM Db2 database.*
 
 ## Disclaimer:
